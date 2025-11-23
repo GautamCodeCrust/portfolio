@@ -1,100 +1,263 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gautamkumar Rojasara | Unity Developer</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gautam Rojasara — Unity Game Developer</title>
+  <meta name="description"
+    content="Portfolio of Gautam Rojasara — Unity Developer. Projects: Rock-Paper-Scissor, Cut & Hologram effect, Xana-Builder, Stardust Metaverse, Ocean Surfer and more.">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <nav>
-      <h1 class="logo">Gautamkumar Rojasara</h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Hi, I’m <span>Gautamkumar Rojasara</span></h2>
-      <p>Unity Developer | Gameplay Programmer | Mobile Game Creator</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a Unity Developer with experience building mobile and PC games inspired by titles like
-      <strong>Satisfactory</strong>, <strong>Eggy Party</strong>, and <strong>ABC Kids</strong>.  
-      I specialize in gameplay systems, UI/UX, optimization, and mobile controls.
-    </p>
-  </section>
-
-  <section id="projects" class="projects">
-    <h2>Featured Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="https://placehold.co/400x250" alt="Zoop Builder System" />
-        <div class="project-info">
-          <h3>Zoop Builder System</h3>
-          <p>A Satisfactory-style multi-placement system in Unity with grid snapping and rotation modes.</p>
-          <a href="#" class="btn small">View Demo</a>
+  <div class="wrap">
+    <aside class="sidebar">
+      <div class="me">
+        <!-- <div class="avatar">GR</div> -->
+        <div>
+          <div class="name">Gautam Rojasara</div>
+          <div class="role">Unity Game Developer — 2D | 3D | Multiplayer | AR | WebGL</div>
         </div>
       </div>
 
-      <div class="project-card">
-        <img src="https://placehold.co/400x250" alt="Mobile Controller" />
-        <div class="project-info">
-          <h3>Mobile Controller</h3>
-          <p>Joystick and camera control system for mobile with multi-touch input handling.</p>
-          <a href="#" class="btn small">GitHub</a>
+
+      <div class="side-section">
+        <h4>Contact</h4>
+        <div class="contacts">
+          <a href="tel:+919998443548">📞 +91-9998443548</a>
+          <a href="mailto:gautamrojasara714@gmail.com">✉️ gautamrojasara714@gmail.com</a>
+          <a class="download" href="/mnt/data/CV.pdf" download>Download CV</a>
         </div>
       </div>
 
-      <div class="project-card">
-        <img src="https://placehold.co/400x250" alt="ABC Kids Game" />
-        <div class="project-info">
-          <h3>ABC Kids Game</h3>
-          <p>Fun educational minigames like tracing, fishing, and bubble popping built in Unity.</p>
-          <a href="#" class="btn small">Play Online</a>
+
+      <div class="side-section">
+        <h4>Social</h4>
+        <div class="contacts">
+          <a class="social" href="https://www.linkedin.com/in/gautamrojasara714/" target="_blank">LinkedIn</a>
+          <a class="social" href="https://www.github.com/gautamm714/" target="_blank">GitHub</a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Unity (2D & 3D)</li>
-      <li>C# Programming</li>
-      <li>Mobile Game Development</li>
-      <li>UI/UX Implementation</li>
-      <li>Physics & Animation</li>
-      <li>Git / Version Control</li>
-    </ul>
-  </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Let’s collaborate or talk about your next game idea!</p>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
+      <div class="side-section">
+        <h4>Skills</h4>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div class="flex"><strong>Unity & C#</strong>
+            <div style="margin-left:auto;color:var(--muted)">88%</div>
+          </div>
+          <div class="flex"><strong>Photon/Multiplayer</strong>
+            <div style="margin-left:auto;color:var(--muted)">86%</div>
+          </div>
+        </div>
+      </div>
+    </aside>
 
-  <footer>
-    <p>© 2025 Gautamkumar Rojasara | Unity Game Developer</p>
-  </footer>
 
-  <script src="script.js"></script>
+    <main class="main">
+      <section class="hero section reveal">
+        <div class="headline">
+          <div>
+            <h1 class="title">Hi — I'm Gautam, a Unity Developer</h1>
+            <div class="tagline">I build 2D, 3D, Multiplayer, AR & WebGL experiences. <span class="typing"
+                id="typed"></span>
+            </div>
+          </div>
+          <div style="text-align:right">
+            <div style="margin-top:12px"><a class="download" href="/mnt/data/CV.pdf" download>Get CV</a></div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="projects" class="section reveal">
+        <h3>Projects</h3>
+        <div class="projects" id="projectsGrid">
+          <!-- Rock Paper Scissor -->
+          <article class="proj">
+            <div>
+              <div class="proj-title">Rock-Paper-Scissor</div>
+              <div class="proj-meta">Multiplayer using Photon, AdMob, IAP, Leaderboard APIs. Themed hands, realistic
+                background effects, missions & store panel, social login (Facebook/Gmail/Guest), daily spin wheel.</div>
+            </div>
+            <div class="proj-tags">
+              <span class="tag">Photon</span>
+              <span class="tag">AdMob</span>
+              <span class="tag">IAP</span>
+            </div>
+          </article>
+
+
+          <!-- Cut & Hologram -->
+          <article class="proj">
+            <div>
+              <div class="proj-title">Cut & Hologram Effect</div>
+              <div class="proj-meta">AR-based app. Displays hologram-style 3D models loaded from asset bundles. Cut
+                models using plane slicing to view inner structure. Includes zoom & rotate controls.</div>
+            </div>
+            <div class="proj-tags">
+              <span class="tag">AR Foundation</span>
+              <span class="tag">Addressables</span>
+            </div>
+          </article>
+
+
+          <!-- House Modification System -->
+          <article class="proj">
+            <div>
+              <div class="proj-title">House Modification System</div>
+              <div class="proj-meta">Similar to Adopt Me house editor. Modify rotation, position, colors, wall/floor
+                textures, save to cloud via addressable bundles. Includes login/register via API.</div>
+            </div>
+            <div class="proj-tags">
+              <span class="tag">Addressables</span>
+              <span class="tag">Cloud Save</span>
+            </div>
+          </article>
+
+
+          <!-- Xana Builder -->
+          <article class="proj">
+            <div>
+              <div class="proj-title">Xana-Builder (web.xana.net)</div>
+              <div class="proj-meta">Desktop world builder with roads, buildings, props, etc. JSON map store, publish from builder & test in XANA App, runtime gamification components attached as user requirement from available component, hierarchy controls, transform editing, Undo-Redo, etc.</div>
+            </div>
+            <div class="proj-tags">
+              <span class="tag">Editor Tools</span>
+              <span class="tag">Standalone</span>
+              <span class="tag">Photon Fusion</span>
+            </div>
+          </article>
+
+          <!-- Xana App -->
+          <article class="proj">
+            <div>
+              <div class="proj-title">Xana-App</div>
+              <div class="proj-meta">In XANA, users can create and customize AI avatars, explore and build in the Metaverse, participate in Web3.0 games, and engage in SocialFi activities. It offers a platform for users to connect, play, and earn through various interactive experiences, contributing to a vibrant community. </div>
+            </div>
+            <div class="proj-tags">
+              <span class="tag">Mobile</span>
+              <span class="tag">XANA</span>
+            </div>
+          </article>
+
+          <!-- Event Presentation -->
+          <article class="proj">
+            <div>
+              <div class="proj-title">Presentation for Event</div>
+              <div class="proj-meta">Photon-based multi-user presentation system to share PDFs, images & YouTube videos
+                with all connected clients in real time.</div>
+            </div>
+            <div class="proj-tags">
+              <span class="tag">Photon</span>
+          </article>
+
+          <!-- Stardust Metaverse -->
+          <article class="proj">
+            <div>
+              <div class="proj-title">Stardust Metaverse (thestartdust.life)</div>
+              <div class="proj-meta">Desktop app for galleries & arenas with interactive kiosks, paintings, 3D models.
+                Includes Photon text chat, Agora voice, Moralis wallet, addressables, day-night cycle.</div>
+            </div>
+            <div class="proj-tags">
+              <span class="tag">Photon</span>
+              <span class="tag">Agora</span>
+              <span class="tag">Moralis</span>
+            </div>
+          </article>
+
+          <!-- Elevare Club Metaverse -->
+          <article class="proj">
+            <div>
+              <div class="proj-title">Elevare Club Metaverse</div>
+              <div class="proj-meta">WebGL app with multiplayer, chat, video calls, screen share, Photon networking,
+                Agora integration & friend invite links.</div>
+            </div>
+            <div class="proj-tags">
+              <span class="tag">WebGL</span>
+              <span class="tag">Photon</span>
+              <span class="tag">Agora</span>
+            </div>
+          </article>
+
+
+          <!-- Ocean Surfer -->
+          <article class="proj">
+            <div>
+              <div class="proj-title">Ocean Surfer</div>
+              <div class="proj-meta">Android game like Subway Surfers. Water & underwater gameplay, trophies, powerups,
+                missions, AdMob, FB login, IAP, spin wheel.</div>
+            </div>
+            <div class="proj-tags">
+              <span class="tag">Mobile</span>
+              <span class="tag">AdMob</span>
+              <span class="tag">IAP</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h3>Experience</h3>
+        <div class="timeline">
+          <div class="exp">
+            <div style="display:flex;justify-content:space-between;align-items:center"><strong>Unity Developer —
+                InTechual Solutions</strong><small>Apr 2022 - Present</small></div>
+            <div style="color:var(--muted);margin-top:6px">Working on multiplayer systems, AR features, and
+              optimization for desktop, mobile & webGl.</div>
+          </div>
+
+
+          <div class="exp">
+            <div style="display:flex;justify-content:space-between;align-items:center"><strong>Junior Unity Developer
+                — InTechual Solutions</strong><small>Mar 2021 - Apr 2022</small></div>
+            <div style="color:var(--muted);margin-top:6px">Assisted on game features, integration and builds.</div>
+          </div>
+
+
+          <div class="exp">
+            <div style="display:flex;justify-content:space-between;align-items:center"><strong>Intern — InTechual
+                Solutions</strong><small>Nov 2020 - Feb 2021</small></div>
+            <div style="color:var(--muted);margin-top:6px">Internship focused on game prototyping and editor tools.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="year"></span> Gautamkumar Rojasara — Built for games
+      </footer>
+    </main>
+
+    <script>
+      // typing effect (simple)
+      const phrases = ['Multiplayer', 'AR Experiences', 'WebGL & Mobile Optimization', 'Editor Tools & Pipelines'];
+      let idx = 0; let pos = 0; let forward = true; const el = document.getElementById('typed');
+      function tick() {
+        const word = phrases[idx];
+        if (forward) { pos++; if (pos > word.length) { forward = false; setTimeout(tick, 900); return } }
+        else { pos--; if (pos === 0) { forward = true; idx = (idx + 1) % phrases.length; setTimeout(tick, 400); return } }
+        el.textContent = word.slice(0, pos);
+        setTimeout(tick, 80);
+      }
+      if (el) tick();
+
+
+      // reveal on scroll
+      const reveals = document.querySelectorAll('.reveal');
+      function onScroll() {
+        for (const r of reveals) {
+          const rect = r.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 80) { r.classList.add('visible') }
+        }
+      }
+      window.addEventListener('scroll', onScroll); onScroll();
+
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
