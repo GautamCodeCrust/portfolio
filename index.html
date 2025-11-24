@@ -67,9 +67,6 @@
               <span class="typing" id="typed"></span>
             </div>
           </div>
-          <div style="text-align:right">
-            <div style="margin-top:12px"><a class="download" href="/mnt/data/CV.pdf" download>Get CV</a></div>
-          </div>
         </div>
       </section>
 
@@ -85,7 +82,9 @@
                 background effects, missions & store panel, social login (Facebook/Gmail/Guest), daily spin wheel.</div>
             </div>
             <div class="proj-links">
-              <a href="/mnt/data/RockPaperScissor.mp4" target="_blank" class="proj-btn">▶ Watch Video</a>
+            </div>
+            <div class="proj-links">
+              <button class="proj-btn" onclick="openVideo('/mnt/data/RockPaperScissor.mp4')">▶ Play Video</button>
             </div>
             <div class="proj-tags">
               <span class="tag">Photon</span>
@@ -214,7 +213,7 @@
                 missions, AdMob, FB login, IAP, spin wheel.</div>
             </div>
             <div class="proj-links">
-              <a href="/mnt/data/OceanSurfer.mp4" target="_blank" class="proj-btn">▶ Watch Video</a>
+              <button class="proj-btn" onclick="openVideo('/mnt/data/OceanSurfer.mp4')">▶ Play Video</button>
             </div>
             <div class="proj-tags">
               <span class="tag">Mobile</span>
@@ -245,7 +244,7 @@
                 strategy and become the ultimate card-merging champion. Hammer, Rocket, Skip watch ad features.</div>
             </div>
             <div class="proj-links">
-              <a href="/mnt/data/2048CardMerger.mp4" target="_blank" class="proj-btn">▶ Watch Video</a>
+              <button class="proj-btn" onclick="openVideo('/mnt/data/2048CardMerger.mp4')">▶ Play Video</button>
             </div>
             <div class="proj-tags">
               <span class="tag">Mobile</span>
@@ -290,10 +289,17 @@
             </div>
           </article>
         </div>
+        <!-- Video Popup Container -->
+        <div id="videoModal" class="video-modal">
+          <div class="video-content">
+            <span class="close-btn" onclick="closeVideo()">&times;</span>
+            <video id="projectVideo" controls autoplay></video>
+          </div>
+        </div>
       </section>
 
       <section class="section reveal">
-        <h3>Experience</h3>
+        <h3>Professional Experiences</h3>
         <div class="timeline">
           <div class="exp">
             <div style="display:flex;justify-content:space-between;align-items:center"><strong>Unity Developer —
@@ -350,6 +356,23 @@
 
 
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      function openVideo(src) {
+        const modal = document.getElementById("videoModal");
+        const video = document.getElementById("projectVideo");
+
+        video.src = src;
+        modal.style.display = "flex";
+      }
+
+      function closeVideo() {
+        const modal = document.getElementById("videoModal");
+        const video = document.getElementById("projectVideo");
+
+        modal.style.display = "none";
+        video.pause();
+        video.src = "";
+      }
     </script>
 </body>
 
