@@ -84,7 +84,7 @@
             <div class="proj-links">
             </div>
             <div class="proj-links">
-              <button class="proj-btn" onclick="openVideo('/mnt/data/RockPaperScissor.mp4')">▶ Play Video</button>
+              <button class="proj-btn" onclick="openVideo('assets/videos/RockPaperScissor.mp4')">▶ Play Video</button>
             </div>
             <div class="proj-tags">
               <span class="tag">Photon</span>
@@ -213,7 +213,7 @@
                 missions, AdMob, FB login, IAP, spin wheel.</div>
             </div>
             <div class="proj-links">
-              <button class="proj-btn" onclick="openVideo('/mnt/data/OceanSurfer.mp4')">▶ Play Video</button>
+              <button class="proj-btn" onclick="openVideo('assets/videos/OceanSurfer.mp4')">▶ Play Video</button>
             </div>
             <div class="proj-tags">
               <span class="tag">Mobile</span>
@@ -244,7 +244,7 @@
                 strategy and become the ultimate card-merging champion. Hammer, Rocket, Skip watch ad features.</div>
             </div>
             <div class="proj-links">
-              <button class="proj-btn" onclick="openVideo('/mnt/data/2048CardMerger.mp4')">▶ Play Video</button>
+              <button class="proj-btn" onclick="openVideo('assets/videos/2048CardMerger.mp4')">▶ Play Video</button>
             </div>
             <div class="proj-tags">
               <span class="tag">Mobile</span>
@@ -288,13 +288,6 @@
               <span class="tag">Contest</span>
             </div>
           </article>
-        </div>
-        <!-- Video Popup Container -->
-        <div id="videoModal" class="video-modal">
-          <div class="video-content">
-            <span class="close-btn" onclick="closeVideo()">&times;</span>
-            <video id="projectVideo" controls></video>
-          </div>
         </div>
       </section>
 
@@ -387,6 +380,14 @@
         }
       }
     </script>
+    <!-- Hidden Video Popup -->
+<div id="videoModal" class="video-modal">
+  <div class="video-content">
+    <span class="close-btn" onclick="closeVideo()">&times;</span>
+    <video id="projectVideo" controls></video>
+  </div>
+</div>
+
 </body>
 
 </html>

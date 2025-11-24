@@ -305,18 +305,18 @@ a.social {
 }
 
 .video-modal {
-  display: none;
+  display: none; /* <-- IMPORTANT */
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0,0,0,0.85);
   justify-content: center;
   align-items: center;
   z-index: 9999;
 }
 
 .video-content {
-  max-width: 95%;
-  max-height: 95%;
+  max-width: 90%;
+  max-height: 80%;
   position: relative;
 }
 
@@ -330,7 +330,7 @@ a.social {
   position: absolute;
   top: -30px;
   right: 0;
+  cursor: pointer;
   font-size: 32px;
   color: white;
-  cursor: pointer;
 }
